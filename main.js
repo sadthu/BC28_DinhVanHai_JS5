@@ -31,7 +31,7 @@ btnTinhTien.onclick = function () {
 	var hoTen = document.getElementById('hoTen').value;
 	let tien = Intl.NumberFormat('en-Us');
 	soKwTieuThu = Number(document.getElementById('soKwTieuThu').value);
-	document.getElementById ('ketQua2').innerHTML =hoTen + ': ' + tien.format(tongTien(soKwTieuThu)) + ' VND';
+	document.getElementById ('ketQua2').innerHTML = hoTen + ': ' + tien.format(tongTien(soKwTieuThu)) + ' VND';
 }
 
 function tongTien(soKwTieuThu) {
@@ -54,8 +54,6 @@ function tongTien(soKwTieuThu) {
 			soKwTieuThu = 0;
 		}
 	}
-
 	soTien += soKwTieuThu * conLai;
-
 	return soTien;
 }
